@@ -196,7 +196,7 @@ You can also change the name of the generated "junction" table.
 ```typescript
 @ManyToMany(type => Category)
 @JoinTable({
-    name: "question_categories", // table name for the junction table of this relation
+    name: "question_categories", // table name for the function table of this relation
     joinColumn: {
         name: "question",
         referencedColumnName: "id"
